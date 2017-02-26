@@ -10,27 +10,50 @@ import UIKit
 import MapKit
 
 class CatMapController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var mapView: MKMapView!
+    
+    var photos = [PhotoInfo]()
+    {
+        didSet { updateMap() }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        testRequest()
+
+    }
+
+        
+    func updateMap()
+    {
+        clearMap()
+        self.mapView.addAnnotations(photos)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func clearMap()
+    {
+        self.mapView.removeAnnotations(mapView.annotations)
     }
-    */
+
+    func testRequest()
+    {
+        let service = APIService()
+        service.find(tag: "cat", success: { photos in
+            print("CAT MAP SUCCESS: ", photos)
+            
+            // т.к. получение данных из сети выполняется в фоне,
+            // то и замыкание, в котором находится этот текст, срабатывает там же.
+            // обращаться из фона в UI негоже,
+            // поэтому переключаемся в основной поток
+            DispatchQueue.main.async
+            {
+                self.photos = photos
+            }
+            
+        }) { error in
+            print("CAT MAP ERROR: ", error)
+        }
+    }
 
 }

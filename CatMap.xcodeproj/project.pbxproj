@@ -12,6 +12,8 @@
 		8F1614921E62D88E00DA71BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F1614911E62D88E00DA71BD /* Assets.xcassets */; };
 		8F1614951E62D88E00DA71BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F1614931E62D88E00DA71BD /* LaunchScreen.storyboard */; };
 		8F16149D1E62D90C00DA71BD /* CatMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F16149C1E62D90C00DA71BD /* CatMapController.swift */; };
+		8F16149F1E62DE1400DA71BD /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F16149E1E62DE1400DA71BD /* APIService.swift */; };
+		8FCC340B1E62FB9B00CD8775 /* PhotoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCC340A1E62FB9A00CD8775 /* PhotoInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		8F1614941E62D88E00DA71BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F1614961E62D88E00DA71BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F16149C1E62D90C00DA71BD /* CatMapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatMapController.swift; sourceTree = "<group>"; };
+		8F16149E1E62DE1400DA71BD /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		8FCC340A1E62FB9A00CD8775 /* PhotoInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				8F1614931E62D88E00DA71BD /* LaunchScreen.storyboard */,
 				8F1614961E62D88E00DA71BD /* Info.plist */,
 				8F16149C1E62D90C00DA71BD /* CatMapController.swift */,
+				8F16149E1E62DE1400DA71BD /* APIService.swift */,
+				8FCC340A1E62FB9A00CD8775 /* PhotoInfo.swift */,
 			);
 			path = CatMap;
 			sourceTree = "<group>";
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FCC340B1E62FB9B00CD8775 /* PhotoInfo.swift in Sources */,
 				8F16148B1E62D88E00DA71BD /* AppDelegate.swift in Sources */,
+				8F16149F1E62DE1400DA71BD /* APIService.swift in Sources */,
 				8F16149D1E62D90C00DA71BD /* CatMapController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +310,7 @@
 				8F16149B1E62D88E00DA71BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
