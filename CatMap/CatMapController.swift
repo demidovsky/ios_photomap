@@ -23,7 +23,16 @@ class CatMapController: UIViewController {
         testRequest()
         
         mapView.delegate = self
-
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard
+            let nextViewController = segue.destination as? DetailsController,
+            let photo = sender as? PhotoInfo
+        else { return }
+        nextViewController.photoToShow = photo
+        
     }
 
         
@@ -95,7 +104,20 @@ extension CatMapController:MKMapViewDelegate
         
         photoView?.annotation = photoToShow
         
+        photoView?.rightCalloutAccessoryView = UIButton(type: UIButtonType.detailDisclosure)
+        
         return photoView
+    }
+    
+    
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        
+        guard
+            let photo = view.annotation as? PhotoInfo
+        else { return }
+        
+        performSegue(withIdentifier: "showDetails", sender: photo)
     }
 }
 

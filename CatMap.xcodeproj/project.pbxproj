@@ -15,6 +15,7 @@
 		8F16149F1E62DE1400DA71BD /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F16149E1E62DE1400DA71BD /* APIService.swift */; };
 		8FCC340B1E62FB9B00CD8775 /* PhotoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCC340A1E62FB9A00CD8775 /* PhotoInfo.swift */; };
 		8FCC340D1E630F2100CD8775 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCC340C1E630F2100CD8775 /* ImageDownloader.swift */; };
+		8FCC340F1E63155900CD8775 /* DetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCC340E1E63155900CD8775 /* DetailsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8F16149E1E62DE1400DA71BD /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		8FCC340A1E62FB9A00CD8775 /* PhotoInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoInfo.swift; sourceTree = "<group>"; };
 		8FCC340C1E630F2100CD8775 /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		8FCC340E1E63155900CD8775 /* DetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				8F16149E1E62DE1400DA71BD /* APIService.swift */,
 				8FCC340A1E62FB9A00CD8775 /* PhotoInfo.swift */,
 				8FCC340C1E630F2100CD8775 /* ImageDownloader.swift */,
+				8FCC340E1E63155900CD8775 /* DetailsController.swift */,
 			);
 			path = CatMap;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				8FCC340D1E630F2100CD8775 /* ImageDownloader.swift in Sources */,
 				8F16148B1E62D88E00DA71BD /* AppDelegate.swift in Sources */,
 				8F16149F1E62DE1400DA71BD /* APIService.swift in Sources */,
+				8FCC340F1E63155900CD8775 /* DetailsController.swift in Sources */,
 				8F16149D1E62D90C00DA71BD /* CatMapController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
