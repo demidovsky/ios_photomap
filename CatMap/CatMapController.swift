@@ -21,6 +21,8 @@ class CatMapController: UIViewController {
     {
         super.viewDidLoad()
         testRequest()
+        
+        mapView.delegate = self
 
     }
 
@@ -57,3 +59,47 @@ class CatMapController: UIViewController {
     }
 
 }
+
+
+
+
+
+extension CatMapController:MKMapViewDelegate
+{
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?
+    {
+        guard
+            let photoToShow = annotation as? PhotoInfo
+        else
+        {
+            return nil
+        }
+        
+        
+        let id = "photoAnnotationId"
+        
+        
+        var photoView = mapView.dequeueReusableAnnotationView(withIdentifier: id)
+        
+        if photoView == nil
+        {
+            photoView = MKPinAnnotationView(annotation: photoToShow, reuseIdentifier: id)
+        }
+        
+        let imageView = UIImageView(frame:CGRect(x: 0, y: 0, width: 50, height: 50))
+        imageView.contentMode = .scaleAspectFill
+        imageView.showImage(url: photoToShow.smallURL)
+        
+        photoView?.leftCalloutAccessoryView = imageView
+        photoView?.canShowCallout = true
+        
+        photoView?.annotation = photoToShow
+        
+        return photoView
+    }
+}
+
+
+
+
+

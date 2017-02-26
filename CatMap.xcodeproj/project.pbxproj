@@ -14,6 +14,7 @@
 		8F16149D1E62D90C00DA71BD /* CatMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F16149C1E62D90C00DA71BD /* CatMapController.swift */; };
 		8F16149F1E62DE1400DA71BD /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F16149E1E62DE1400DA71BD /* APIService.swift */; };
 		8FCC340B1E62FB9B00CD8775 /* PhotoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCC340A1E62FB9A00CD8775 /* PhotoInfo.swift */; };
+		8FCC340D1E630F2100CD8775 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCC340C1E630F2100CD8775 /* ImageDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8F16149C1E62D90C00DA71BD /* CatMapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatMapController.swift; sourceTree = "<group>"; };
 		8F16149E1E62DE1400DA71BD /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		8FCC340A1E62FB9A00CD8775 /* PhotoInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoInfo.swift; sourceTree = "<group>"; };
+		8FCC340C1E630F2100CD8775 /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				8F16149C1E62D90C00DA71BD /* CatMapController.swift */,
 				8F16149E1E62DE1400DA71BD /* APIService.swift */,
 				8FCC340A1E62FB9A00CD8775 /* PhotoInfo.swift */,
+				8FCC340C1E630F2100CD8775 /* ImageDownloader.swift */,
 			);
 			path = CatMap;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FCC340B1E62FB9B00CD8775 /* PhotoInfo.swift in Sources */,
+				8FCC340D1E630F2100CD8775 /* ImageDownloader.swift in Sources */,
 				8F16148B1E62D88E00DA71BD /* AppDelegate.swift in Sources */,
 				8F16149F1E62DE1400DA71BD /* APIService.swift in Sources */,
 				8F16149D1E62D90C00DA71BD /* CatMapController.swift in Sources */,
